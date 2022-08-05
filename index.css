@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+body {
+    background-color: #f2f4f8;
+}
+
+.navbar {
+    height: 50px;
+    display: flex;
+    background-color: white;
+    box-shadow: 0px -1px 10px 0px rgba(143, 143, 143, 0.75);
+}
+
+.navbar-logo {
+    display: flex;
+    flex-basis: 20%;
+    /* background-color: blue; */
+}
+
+.navbar-items {
+    display: flex;
+    flex-basis: 60%;
+    /* background-color: black; */
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5 {
+    flex-basis: 17%;
+    padding: 0.7rem;
+}
+
+.it-l {
+    padding-right: 5px;
+}
+
+.bor-active {
+    border-bottom: 3px solid #006e74;
+}
+
+.items {
+    border-left: 1px solid #006e74;
+    align-items: center;
+}
+
+.items:hover {
+    background-color: gray;
+}
+
+.item5 {
+    /* background-color: lawngreen; */
+    border-right: 1px solid #006e74;
+}
+
+.navbar-profile {
+    display: flex;
+    flex-basis: 20%;
+    /* background-color: violet; */
+}
+
+#logo {
+    width: 130px;
+    height: 20px;
+    margin: 1rem;
+}
+
+.an {
+    padding: 0.7rem;
+}
+
+#user {
+    padding: 1rem;
+}
+
+#usrl {
+    padding-left: 1rem;
+}
+
+.flex-container-top {
+    display: flex;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.flex-container-top>div {
+    background-color: white;
+    margin: 10px;
+    height: 75px;
+}
+
+.flex {
+    border-radius: 7px;
+    color: black;
+    padding: 0.7rem;
+}
+
+.left {
+    display: flex;
+    flex-basis: 60%;
+}
+
+.flex-top {
+    box-shadow: 0px 0px 15px 0px rgba(143, 143, 143, 0.75);
+}
+
+.b-top {
+    display: flex;
+    flex-basis: 65%;
+}
+
+.b-top>div {
+    background-color: white;
+    margin: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(143, 143, 143, 0.75);
+    border-radius: 7px;
+}
+
+.flex1 {
+    height: 7rem;
+}
+
+.header-fb {
+    border-bottom: 1px solid #006e74;
+}
+
+.fb-items {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    transition: .3s;
+}
+
+.fb-item4 {
+    color: #006e74;
+}
+
+
+/* #vai {
+    padding-left: 20rem;
+} */
+
+.fb-items:hover {
+    color: lightgrey;
+    transition: .3s;
+}
