@@ -465,10 +465,27 @@ body {
     justify-content: space-between;
 }
 
+@media (max-width:700px) {
+    .sear {
+        display: flex;
+        flex-direction: column;
+    }
+    .sub-ship>div>ol {
+        display: flex;
+        gap: 0.4rem;
+        list-style: none;
+        cursor: pointer;
+    }
+}
+
 
 /* FULL SCREEN */
 
 @media (min-width: 1115px) {
+    .sear {
+        display: flex;
+        flex-direction: row;
+    }
     .flex-container-top {
         display: flex;
     }
