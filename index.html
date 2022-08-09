@@ -5,118 +5,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UST Omni</title>
+    <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
-    <div class="header">
-        <div class="navbar">
-            <div class="navbar-logo">
-                <img id="logo" src="assets\UST Omni.webp" alt="">
-            </div>
-            <div class="navbar-items">
-                <div id="it1" class="items item1 bor-active" onclick="it1()"><img class="it-l" src="assets\Home.webp" alt="">Dashboard</div>
-                <div id="it2" class="items item2" onclick="it2()"><img class=" it-l " src="assets\Shipment_Mgmt.webp " alt=" ">Shipments</div>
-                <div id="it3" class="items item3" onclick="it3()"><img class="it-l" src="assets\file.png" alt="">Reports</div>
-                <div id="it4" class="items item4" onclick="it4()"><img class=" it-l " src="assets\cont.png " alt=" ">Control Tower</div>
-                <div id="it5" class="items item5" onclick="it5()"><img class="it-l" src="assets\act.png" alt="">Action Panel</div>
-            </div>
-            <div class="navbar-profile">
+
+    <nav id="hamnav">
+        <label style="float: right;" for="hamburger">&#9776;</label>
+        <input style="float: right;" type="checkbox" id="hamburger" />
+        <div class="header">
+            <div class="navbar">
+                <div class="navbar-logo">
+                    <img id="logo" src="assets\UST Omni.webp" alt="">
+                </div>
+                <div style="width: 100%;" id="hamitems" class="hamitems navbar-items">
+                    <div id="it1" class="items item1 bor-active" onclick="it1()"><img class="it-l" src="assets\Home.webp" alt="">Dashboard</div>
+                    <div id="it2" class="items item2" onclick="it2()"><img class=" it-l " src="assets\Shipment_Mgmt.webp " alt=" ">Shipments</div>
+                    <div id="it3" class="items item3" onclick="it3()"><img class="it-l" src="assets\file.png" alt="">Reports</div>
+                    <div id="it4" class="items item4" onclick="it4()"><img class=" it-l " src="assets\cont.png " alt=" ">Control Tower</div>
+                    <div id="it5" class="items item5" onclick="it5()"><img class="it-l" src="assets\act.png" alt="">Action Panel</div>
+                </div>
                 <div class="an">
                     <img id="alert" src="assets\Group 34136.webp" alt="">
                     <img id="notification" src="assets\Group 34183.webp" alt="">
                 </div>
-                <p id="user">Vignes Kumar Raj M<i id="usrl" class="fa fa-user-circle-o" aria-hidden="true"></i></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="flex-container-top">
-        <div class="flex flex-top" style="flex-grow: 2">
-            <p>Action to take</p>
-            <img id="notification" src="assets\info.webp" alt="">
-        </div>
-        <div class="flex  flex-top" style="flex-grow: 2">
-            <p>Pending approvals</p>
-            <img id="notification" src="assets\info.webp" alt="">
-        </div>
-        <div class="flex  flex-top" style="flex-grow: 2">
-            <p>Delivered in full</p>
-            <img id="notification" src="assets\info.webp" alt="">
-        </div>
-        <div class="flex  flex-top" style="flex-grow: 2">
-            <p>Inbound Freight as % COGS</p>
-            <img id="notification" src="assets\info.webp" alt="">
-        </div>
-    </div>
-
-    <!-- <div class="flex-container-bottom">
-        <div class="left">
-            <div class="top b-top">
-                <div class="flex flex1" style="flex-grow: 4">
-                    <div class="header-fb">
-                        <div class="navbar-items">
-                            <div class="fb-items fb-item1 bor-active"><span id="inbound">Inbound</span></div>
-                            <div class="fb-items fb-item2">Outbound</div>
-                            <div class="fb-items fb-item3">Watchlist</div>
-
-                            <div class="fb-items fb-item4"><span id="vai">View all shipments></span></div>
-                        </div>
-                    </div>
+                <div class="navbar-profile">
+                    <p id="user">Profile <i id="usrl" class="fa fa-user-circle-o" aria-hidden="true"></i></p>
                 </div>
             </div>
-            <div class="bottom b-bottom">
-
-            </div>
         </div>
-    </div> -->
+
+        <div id="hamitems-m" class="hamitems-m navbar-items-m">
+            <div class="items-m item1-m bor-active" onclick="it1()"><img class="it-l" src="assets\Home.webp" alt="">Dashboard</div>
+            <div class="items-m item2-m" onclick="it2()"><img class=" it-l " src="assets\Shipment_Mgmt.webp " alt=" ">Shipments</div>
+            <div class="items-m item3-m" onclick="it3()"><img class="it-l" src="assets\file.png" alt="">Reports</div>
+            <div class="items-m item4-m" onclick="it4()"><img class=" it-l " src="assets\cont.png " alt=" ">Control Tower</div>
+            <div class="items-m item5-m" onclick="it5()"><img class="it-l" src="assets\act.png" alt="">Action Panel</div>
+        </div>
+    </nav>
+
+    <div class="flex-container-top">
+        <div class="flex flex-top">
+            <p id="info">Action to take</p>
+            <img id="info" src="assets\info.webp" alt="" width="16px" height="20px" style="padding-top: 4px;">
+        </div>
+        <div class="flex  flex-top">
+            <p id="info">Pending approvals</p>
+            <img id="info" src="assets\info.webp" alt="" width="16px" height="20px" style="padding-top: 4px;">
+        </div>
+        <div class="flex  flex-top">
+            <p id="info">Delivered in full</p>
+            <img id="info" src="assets\info.webp" alt="" width="16px" height="20px" style="padding-top: 4px;">
+        </div>
+        <div class="flex  flex-top">
+            <p id="info">Inbound Freight as % COGS</p>
+            <img id="info" src="assets\info.webp" alt="" width="16px" height="20px" style="padding-top: 4px;">
+        </div>
+    </div>
+
 
     <div id="flex-container">
         <div id="left">
             <div id="top">
                 <div class="flex flex-demo" id="first">
                     <div class="flex flex1" style="flex-grow: 4">
-                        <div class="header-fb">
-                            <div class="navbar-items">
-                                <div class="fb-items fb-item1 bor-active"><span id="inbound">Inbound</span></div>
-                                <div class="fb-items fb-item2">Outbound</div>
-                                <div class="fb-items fb-item3">Watchlist</div>
-                                <div class="fb-items fb-item4"><span id="vai">View all shipments></span></div>
+                        <div class="sub-ship">
+                            <div>
+                                <ol>
+                                    <li class="iow">Inbound</li>
+                                    <li class="iow">Outbound</li>
+                                    <li class="iow">Watchlist</li>
+                                </ol>
+                            </div>
+                            <div>
+                                <p style="cursor: pointer;">view all shipments ></p>
                             </div>
                         </div>
-                        <nav class="underlines">
-                            <ul class="un">
-                                <li><a>All <span>(25)</span></a>
+                        <div class="search">
+                            <div class="sear">
+                                <span class="hover-box">All<b> (25)</b></span>
+                                <span class="hover-box">Delayed<b> (10)</b></span>
+                                <span class="hover-box">Early<b> (6)</b></span>
+                                <span class="hover-box">Rescheduled<b> (2)</b></span>
+                                <span class="hover-box">Under Review<b> (7)</b></span>
+                                <span class="hover-box">On Time<b> (7)</b></span>
+                            </div>
+                            <div>
+                                <div>
+                                    <span class="material-symbols-outlined">
+                                        search
+                                    </span>
+                                    <input type="text" placeholder="Search by: Shipment ID, Origin, Destination,Product category,vendor">
+                                </div>
+                            </div>
+                        </div>
 
-                                </li>
-                                <li><a>Delayed <span>(10)</span></a>
-
-                                </li>
-                                <li><a>Early <span>(6)</span></a>
-
-                                </li>
-                                <li><a>Resheduled <span>(2)</span></a>
-
-                                </li>
-                                <li><a>Under Review <span>(7)</span></a>
-
-                                </li>
-                                <li><a>On Time <span>(7)</span></a>
-                                </li>
-
-                            </ul>
-                        </nav>
-                        <br>
-                        <form class="search">
-                            <button class="bar">
-                                    <img src="assets\Group 33795.png" alt="searching">
-                                    </button>
-                            <input type="search box" class="searchbox" placeholder="Search by: Shipment ID, Origin, Destination, Product category, Vendor"></input>
-                        </form>
                     </div>
 
                 </div>
@@ -379,18 +365,6 @@
                     </div>
                 </div>
 
-                <!-- <div class="scrollblock">
-                    <div class="scrolling">
-                        
-
-
-
-
-
-
-                    </div>
-                </div> -->
-
             </div>
         </div>
         <div class="flex flex-demo" id="fifth">
@@ -399,7 +373,7 @@
             </div>
             <center id="texttt">
                 <h1>UST Omni Services</h1>
-                <br><br>
+                <br>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis enim quibusdam consequatur excepturi, ad adipisci dicta natus, nobis atque quod suscipit vitae omnis. Doloribus natus harum, odit iste quis nulla deserunt beatae repudiandae
                     quod sed blanditiis dolorum temporibus veritatis quibusdam neque? Aspernatur exercitationem id ipsam consectetur dolorem libero distinctio harum debitis aut illo eligendi ratione laboriosam eaque eveniet qui error quas nisi sequi itaque,
                     adipisci quam, vitae non fuga repudiandae. Consectetur, voluptas, aliquid et aspernatur quos excepturi velit iusto eligendi laudantium dicta molestias. Officiis, inventore harum! Veritatis, distinctio fugit! Voluptates nobis et corporis
@@ -408,40 +382,6 @@
         </div>
     </div>
 
-    <script>
-        function removeall() {
-            document.getElementById("it1").classList.remove("bor-active")
-            document.getElementById("it2").classList.remove("bor-active")
-            document.getElementById("it3").classList.remove("bor-active")
-            document.getElementById("it4").classList.remove("bor-active")
-            document.getElementById("it5").classList.remove("bor-active")
-        }
-
-        function it1() {
-            removeall();
-            document.getElementById("it1").classList.add("bor-active");
-        }
-
-        function it2() {
-            removeall();
-            document.getElementById("it2").classList.add("bor-active");
-        }
-
-        function it3() {
-            removeall();
-            document.getElementById("it3").classList.add("bor-active");
-        }
-
-        function it4() {
-            removeall();
-            document.getElementById("it4").classList.add("bor-active");
-        }
-
-        function it5() {
-            removeall();
-            document.getElementById("it5").classList.add("bor-active");
-        }
-    </script>
 </body>
 
 </html>
